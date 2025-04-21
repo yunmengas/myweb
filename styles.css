@@ -1,0 +1,313 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+    overflow: hidden;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.profile-img img {
+
+    width: 100%;
+    height: auto;
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+/* .button {
+    padding: 8px 16px;   
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}  */
+
+/* .dowanload {
+    background-image: linear-gradient(to right, #2d2b74 0%, #cb8394 100%);
+    color: white;
+    font-size: 15px;
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+} */
+
+
+
+/* From Uiverse.io by adamgiebl */ 
+/* From Uiverse.io by mrhyddenn */ 
+
+
+
+.container-quark{
+    margin-top: 50px;
+
+}
+.quark{
+    width: 100vw;
+    height: 55px;
+    max-width: 380px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    
+justify-content: center;   
+position: relative;
+   
+    
+}
+
+.quark-img{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+   left: 0;
+    margin-left: 15px;
+    border-radius: 15px;
+    
+}
+
+.quark-t{
+    position:absolute;
+    text-align: center;
+    align-content:center ;
+    justify-content: center;
+    font-weight: bold;
+
+   
+    
+}
+
+.quark-img-next{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0;
+    margin-left: 20px;
+    border-radius: 15px;
+    margin-right: 15px;
+    
+}
+
+.shell {
+    position: relative;
+    width: 60vw;
+    height: 40vw;
+    max-width: 380px;
+    max-height: 250px;
+    margin-top: 30px;
+    color: white;
+    perspective: 1000px;
+    transform-origin: center;
+
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: translateZ(-30vw) rotateY(0);
+    animation: carousel 9s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+
+.item {
+    position: absolute;
+    width: 60vw;
+    height: 40vw;
+    max-width: 380px;
+    max-height: 250px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    background-size: cover;
+    /* -webkit-box-reflect: below 25px -webkit-linear-gradient(transparent 50%, rgba(255, 255, 255, 0.3)); */
+    /* 创建倒影效果 */
+}
+
+
+.item:nth-child(1) {
+    background-image: url(./01.jpg);
+    transform: rotateY(0) translateZ(35vw);
+}
+
+
+.item:nth-child(2) {
+    background-image: url(./02.jpg);
+    transform: rotateY(120deg) translateZ(35vw);
+}
+
+
+.item:nth-child(3) {
+    background-image: url(./03.jpg);
+    transform: rotateY(240deg) translateZ(35vw);
+}
+
+
+@keyframes carousel {
+
+    0%,
+    17.5% {
+        transform: translateZ(-35vw) rotateY(0);
+    }
+
+    27.5%,
+    45% {
+        transform: translateZ(-35vw) rotateY(-120deg);
+    }
+
+    55%,
+    72.5% {
+        transform: translateZ(-35vw) rotateY(-240deg);
+    }
+
+    82.5%,
+    100% {
+        transform: translateZ(-35vw) rotateY(-360deg);
+    }
+}
+
+.intro-tv {
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+
+}
+
+.icp-d {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    /* 容器的高度 */
+    /* border: 1px solid #000; */
+    /* 仅为了展示边界 */
+}
+
+.icp-text {
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.image {
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+
+
+/* 动效按钮*/ 
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(37, 37, 37);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  margin-top: 70px;
+}
+
+.button:hover {
+  background: rgb(193, 228, 248);
+  color: rgb(33, 0, 85);
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.hoverEffect {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hoverEffect div {
+  background: rgb(222, 0, 75);
+  background: linear-gradient(
+    90deg,
+    rgba(222, 0, 75, 1) 0%,
+    rgba(191, 70, 255, 1) 49%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.5;
+}
+
+.button:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
